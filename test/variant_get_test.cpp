@@ -9,6 +9,10 @@
 // accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
+#ifdef _MSC_VER
+#pragma warning(disable: 4127) // conditional expression is constant
+#endif
+
 #include "boost/variant/get.hpp"
 #include "boost/variant/variant.hpp"
 #include "boost/variant/polymorphic_get.hpp"
